@@ -1,35 +1,38 @@
-# cybersecurity-projects
-Collection of cybersecurity tools and scripts developed in Python for educational and research purposes.
+# 🔎 Python TCP Port Scanner
 
-# 🔎 Python Port Scanner
+A basic TCP port scanner developed in Python for educational and cybersecurity learning purposes.
 
-Basic TCP port scanner developed in Python for educational purposes.
+---
 
-## 📌 Description
-This project is a simple TCP port scanner that checks for open ports on a target host within a predefined port range.
-It resolves hostnames to IPv4 addresses and attempts to establish TCP connections to identify open ports.
+## 📖 Overview
+This project is a simple TCP port scanner written in Python that scans a target host to identify open TCP ports.
+It resolves hostnames into IPv4 addresses and attempts TCP connections using Python sockets.
 
-The tool is designed to demonstrate fundamental networking and cybersecurity concepts such as:
-- TCP connections
-- Socket programming
-- Network reconnaissance
+This tool was developed as part of cybersecurity learning and networking fundamentals practice.
 
-## ⚙️ Features
-- Hostname to IPv4 resolution
-- TCP port scanning
-- Custom timeout handling
-- Clear and readable output
-- Exception handling for common network errors
+---
 
-## 🧠 Technologies Used
+## 🛠 Technologies Used
 - Python 3
-- `socket`
-- `sys`
-- `datetime`
+- socket
+- sys
+- datetime
 
-## ▶️ Usage
+---
 
-Run the script from the command line:
+## ⚙️ How It Works
+1. The user provides a target hostname or IP address as a command-line argument
+2. The hostname is resolved to an IPv4 address
+3. A TCP socket is created for each port in the scan range
+4. The script attempts to connect to each port
+5. Open ports are displayed in the terminal output
 
+---
+
+## ▶️ Requirements
+- Linux system (tested on Kali Linux)
+- Python 3 installed
+
+Check Python version:
 ```bash
-python3 scanner.py <target>
+python3 --version
